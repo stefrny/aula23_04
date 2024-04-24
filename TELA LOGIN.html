@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+      <meta charset="UTF-8">
+      <title>EXEMPLO TELA DE LOGIN DIMDIM</title>
+
+</head>
+
+<body>
+   
+
+   <form id="FormularioLogin">
+    <h1>LOGIN DIMDIM</h1>
+            <label for="usuario">USUARIO:</label>
+            <input type="text" id="usuario" name="Usuario"></br>
+            <label for="senha">SENHA:</label>
+            <input type="password" id="senha" name="senha"></br>
+            <button type="button" onclick="efetuarLogin()">ENVIAR</button>
+            <button type="button" onclick="limparCampos()">LIMPAS CAMPOS</button>
+
+   </form>
+    
+   <script>
+      function efetuarLogin()
+      {
+        let usuario = document.getElementById('usuario').value;
+        let senha = document.getElementById('senha').value;
+        if(usuario == 'senac' && senha == '230424')
+        {
+            window.location.href = 'http://www.google.com.br';
+        }
+        else if(document.getElementById('usuario').value=='senac')
+        {
+            alert("Somente a senha está incorreta")
+        }
+        else
+        {
+            alert("Usuario ou senha incorretos!")
+        }
+        
+      }
+
+      function limparCampos()
+      {
+          document.getElementById('usuario').value = '';
+          document.getElementById('senha').value = '';
+          document.getElementById('usuario').focus() = '';
+
+      }
+   </script>
+
+</body>
+
+</html>

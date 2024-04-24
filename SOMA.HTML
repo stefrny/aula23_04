@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+      <meta charset="UTF-8">
+      <title>PAGINA SOMA</title>
+</head>
+<style>
+    body
+    {
+     text-align: center ;
+    }
+
+    form
+    {
+        display: inline-block ;
+        text-align: left;
+        border: 3px solid black;
+        padding: 25px;
+        border-radius: 10px;
+        width: 400px;
+        margin: 150px auto;
+                    
+    }
+    label, input
+    {
+        display: block;
+        margin-bottom: 10.5px;
+
+        
+    }
+    button
+    {
+      border-radius: 10px;
+     font-size: 15px; 
+    }
+</style>
+<body>
+   <form id="Soma">
+    <h1>SOMA DE NUMEROS</h1>
+    <label for="numero1">Valor 1</label>
+    <input type="number" id="numero1" name="numero1"></br>
+    <label for="numero2"> Valor 2</label>
+    <input type="number" id="numero2" name="numero2"></br>
+    <button type="butoon" onclick="soma();">REALIZAR SOMA</button>
+   </form>
+
+<script>
+     function soma()
+     {
+        let numero1 = parseFloat(document.getElementById('numero1').value);
+        let numero2 = parseFloat(document.getElementById('numero2').value);
+
+        alert(numero1 + numero2);
+
+     }
+
+
+
+
+</script>
+
+</body>
+
+
+</html>
